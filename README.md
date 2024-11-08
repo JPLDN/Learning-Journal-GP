@@ -3,6 +3,7 @@ Learning Journal for Games Programming (Year 2)
 
 15/10/24
 - Created learning journal
+- Getting to understand the process of learning code
 
 22/10/24
 Planning and Brainstorming Ideas for my tutorials:
