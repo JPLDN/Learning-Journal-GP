@@ -4,6 +4,7 @@ Learning Journal for Games Programming (Year 2)
 15/10/24
 - Created learning journal
 - Getting to understand the process of learning code
+- Learnt that coding scripts is a step by step build up process.
 
 22/10/24
 Planning and Brainstorming Ideas for my tutorials:
@@ -36,3 +37,8 @@ Planning and Brainstorming Ideas for my tutorials:
 - What I did was, rearrange some of th objects and emptyobjects in the inspector, connecting so that it becomes a parent/child.
 - I had had to re-shape the hp bar since I found out that, duplicating an object, doesn't fully copy everything and that was what went wrong, so once I fixed the shape of the main HP Bar, it displayed in the scene and works
 how it should do.
+
+12/11/2024
+- Last week I finished the health system, and now this week, it's about my player taking damage.
+- I'll be experimenting i.e. taking damage from other objects (these objects will be playing as enemies/environmental objects i.e. spikes) and fall damage.
+- I began searching for a tutorial online.
