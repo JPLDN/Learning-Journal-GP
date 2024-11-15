@@ -40,5 +40,9 @@ how it should do.
 
 12/11/2024
 - Last week I finished the health system, and now this week, it's about my player taking damage.
-- I'll be experimenting i.e. taking damage from other objects (these objects will be playing as enemies/environmental objects i.e. spikes) and fall damage.
+- I'll be experimenting i.e. taking damage from other objects (these objects will be playing as enemies/environmental objects i.e. spikes)
 - I began searching for a tutorial online.
+
+15/11/2024
+- Started to work on tutorial 3, where my player takes damage when coming into contact with something, in this case it'll be a placeholder object (a cube)
+- 
