@@ -45,4 +45,7 @@ how it should do.
 
 15/11/2024
 - Started to work on tutorial 3, where my player takes damage when coming into contact with something, in this case it'll be a placeholder object (a cube)
-- 
+- I managed to find a tutorial on how to get these objects to damage my player when coming into contact, I bumped into a few issues when working on this tutorial.
+- What went wrong was that whenever my character came into contact with the object, I wasn't being damaged or losing HP.
+- I thought it was an issue with the script, but it turns out I forgot to add in components to the cube playholder, rigidbody.
+- Once I added the rigidbody, I actually started to take damage when coming into contact with the cube.
