@@ -37,6 +37,7 @@ Planning and Brainstorming Ideas for my tutorials:
 - What I did was, rearrange some of th objects and emptyobjects in the inspector, connecting so that it becomes a parent/child.
 - I had had to re-shape the hp bar since I found out that, duplicating an object, doesn't fully copy everything and that was what went wrong, so once I fixed the shape of the main HP Bar, it displayed in the scene and works
 how it should do.
+- I went to the object that has the shape of the HP bar, and I had to re-shape the Anchor preset in the Rect Transform component, once I did that for the duplicated object, it appeared this time when I tested it and functioned how it should.
 
 12/11/2024
 - Last week I finished the health system, and now this week, it's about my player taking damage.
@@ -49,3 +50,6 @@ how it should do.
 - What went wrong was that whenever my character came into contact with the object, I wasn't being damaged or losing HP.
 - I thought it was an issue with the script, but it turns out I forgot to add in components to the cube playholder, rigidbody.
 - Once I added the rigidbody, I actually started to take damage when coming into contact with the cube.
+
+19/11/2024
+- Continuing the taking damage tutorial, 
