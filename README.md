@@ -52,4 +52,6 @@ how it should do.
 - Once I added the rigidbody, I actually started to take damage when coming into contact with the cube.
 
 19/11/2024
-- Continuing the taking damage tutorial, 
+- Continuing the taking damage tutorial work.
+- Bumping into issues where taking damage is inconsistent.
+- I'm using a cube as a placeholder and whenever I bump into it, I either take damage, or I don't which isn't supposed to happen. I'm supposed to take damage whenever I come into contact with the cube.
