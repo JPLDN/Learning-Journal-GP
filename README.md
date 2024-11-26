@@ -55,3 +55,14 @@ how it should do.
 - Continuing the taking damage tutorial work.
 - Bumping into issues where taking damage is inconsistent.
 - I'm using a cube as a placeholder and whenever I bump into it, I either take damage, or I don't which isn't supposed to happen. I'm supposed to take damage whenever I come into contact with the cube.
+
+26/11/2024
+- Began my last tutorial, which is the Menu System.
+- A lot of tutorials involve a main menu system where it includes backgrounds, but I didn't have one so I had to look for one that did not contain a background.
+- I went with a tutorial that included a background, but I was able to skip the background step, and focus on the buttons for the Menu system.
+- I then found one and started the tutorial. I bumped into an issue where my text wasn't appearing when I created a buttion - Text Mesh Pro, but then I figured out that I had to install the Text Mesh Pro imports and then the text appeared for my button.
+- For the most part, the tutorial went smoothly and didn't bump into issues for majority of the way through, but towards the end, I bumped into 2 issues.
+- One of which, was that my "back" and "quit" button were overlapping initially, but whenever I clicked some of the buttons, it resolved the issue, but never resolved the initial start.
+- I solved it simply hiding then "back" button, and it fixed the overlapping issue, whilst still appearing when it needs needed.
+- The second issue was that whenever I clicked the "play", it did not load my tutorial scene.
+- I solved the issue, which was the "SceneManager.LoadScene" line was actually incorrect, so I changed it so that it tags the Tutorial scene and once I clicked "Play" again, it loaded into the Tutorial scene and worked.
