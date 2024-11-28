@@ -71,7 +71,8 @@ how it should do.
 - Eventually it got to the point where I asked for help, and we noticed that whenever I take damage, it's when the object I'm colliding with, moves.
 - Whenever I bumped into it, sometimes it would get knocked over and that's when I take damage.
 - This is what I previously had.
-```.cs private void OnCollisionEnter(Collision collision)
+```.cs
+private void OnCollisionEnter(Collision collision)
  {
      if (collision.gameObject.CompareTag("Spike"))
      {      
@@ -80,7 +81,8 @@ how it should do.
  }
 ```
 - Then I changed from OnCollisionEnter, to an OnTriggerEnter which looks like this:
- ```.cs private void OnTriggerEnter(Collider other)
+ ```.cs
+private void OnTriggerEnter(Collider other)
  {
      if (other.CompareTag("Spike"))
      {
