@@ -73,10 +73,8 @@ how it should do.
 - This is what I previously had.
  private void OnCollisionEnter(Collision collision)
  {
-     // Check if the object the player collided with has the "DamageObject" tag
      if (collision.gameObject.CompareTag("Spike"))
-     {
-         // Apply damage by calling the takeDamage method on the Health system
+     {      
          healthSystem.takeDamage(collisionDamage);
      }
  }
