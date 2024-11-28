@@ -66,3 +66,12 @@ how it should do.
 - I solved it simply hiding then "back" button, and it fixed the overlapping issue, whilst still appearing when it needs needed.
 - The second issue was that whenever I clicked the "play", it did not load my tutorial scene.
 - I solved the issue, which was the "SceneManager.LoadScene" line was actually incorrect, so I changed it so that it tags the Tutorial scene and once I clicked "Play" again, it loaded into the Tutorial scene and worked.
+- After I finish with the Menu system tutorial, I got back to tutorial 3, which is the tutorial where you take damage when colliding with an object.
+- The issue I faced was that the damage I take when colliding with an object was really inconsistent. Sometimes I collide with an object, I take damage but sometimes I don't.
+- Eventually it got to the point where I asked for help, and we noticed that whenever I take damage, it's when the object I'm colliding with, moves.
+- Whenever I bumped into it, sometimes it would get knocked over and that's when I take damage.
+- So what I ended up doing was, removing "OnCollisionEnter" part in my PlayerCollision script, and instead changed to an "OnTriggerEnter" command.
+- I then adjusted the radius for my Players' Capsule Collider, as well as the Obstacles' Box Collider, and once I tested it again, the damage was a lot more consistent and what I wanted.
+- I now take damage every single time I make contact with the object. 
+
+
