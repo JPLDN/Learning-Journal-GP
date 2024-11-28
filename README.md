@@ -70,8 +70,23 @@ how it should do.
 - The issue I faced was that the damage I take when colliding with an object was really inconsistent. Sometimes I collide with an object, I take damage but sometimes I don't.
 - Eventually it got to the point where I asked for help, and we noticed that whenever I take damage, it's when the object I'm colliding with, moves.
 - Whenever I bumped into it, sometimes it would get knocked over and that's when I take damage.
-- So what I ended up doing was, removing "OnCollisionEnter" part in my PlayerCollision script, and instead changed to an "OnTriggerEnter" command.
-- I then adjusted the radius for my Players' Capsule Collider, as well as the Obstacles' Box Collider, and once I tested it again, the damage was a lot more consistent and what I wanted.
-- I now take damage every single time I make contact with the object. 
+- This is what I previously had.
+ private void OnCollisionEnter(Collision collision)
+ {
+     // Check if the object the player collided with has the "DamageObject" tag
+     if (collision.gameObject.CompareTag("Spike"))
+     {
+         // Apply damage by calling the takeDamage method on the Health system
+         healthSystem.takeDamage(collisionDamage);
+     }
+ }
+- Then I changed from OnCollisionEnter, to an OnTriggerEnter which looks like this:
+ private void OnTriggerEnter(Collider other)
+ {
+     if (other.CompareTag("Spike"))
+     {
+         healthSystem.takeDamage(collisionDamage);
+     }
+ }
 
 
