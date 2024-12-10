@@ -90,4 +90,19 @@ private void OnTriggerEnter(Collider other)
      }
  }
 ```
-
+10/12/2024
+- Working on the game prototype, I bumped into an issue where my character would take damage whenever I collided with an object on its side, but whenever I jumped on top of an object, I don't lose damage.
+- It was originally an OnTriggerEnter, and I changed it into an OnCollisionEnter, but that didn't work.
+- Since my player was on a Character Controller, I changed the OnCollisionEnter to an OnControllerCollisiderHit.
+ ```.cs
+private void OnControllerColliderHit(ControllerColliderHit hit)
+{ 
+    if(hit.collider.CompareTag("Spike"))
+    {
+        healthSystem.takeDamage(collisionDamage);
+    }
+}
+```
+- This definitely helped a lot, since now whenever I collided on top of an object, I'd lose damage.
+- However, because the player constantly and lost HP extremely fast, I had to implement an invulnerability into the script.
+- So I went to my health script, and added in a variable, a float invulnerability variable. I then went to void Update and made it so invulnerability isn't so fast and put in Time.Delta Time.
