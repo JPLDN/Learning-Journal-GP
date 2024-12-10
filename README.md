@@ -106,3 +106,5 @@ private void OnControllerColliderHit(ControllerColliderHit hit)
 - This definitely helped a lot, since now whenever I collided on top of an object, I'd lose damage.
 - However, because the player constantly and lost HP extremely fast, I had to implement an invulnerability into the script.
 - So I went to my health script, and added in a variable, a float invulnerability variable. I then went to void Update and made it so invulnerability isn't so fast and put in Time.Delta Time.
+- Then to add to that, I went to my takeDamage command in the Health system and added in an if statement and put that if invulnerability is greater than 0, put in a return command.
+- Then, I had to make a command which controls the duration of invulnerability, so underneath my health -= damage; command, which is under the if invulnerability statement, I did invulerability = 1f.
