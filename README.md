@@ -108,3 +108,6 @@ private void OnControllerColliderHit(ControllerColliderHit hit)
 - So I went to my health script, and added in a variable, a float invulnerability variable. I then went to void Update and made it so invulnerability isn't so fast and put in Time.Delta Time.
 - Then to add to that, I went to my takeDamage command in the Health system and added in an if statement and put that if invulnerability is greater than 0, put in a return command.
 - Then, I had to make a command which controls the duration of invulnerability, so underneath my health -= damage; command, which is under the if invulnerability statement, I did invulerability = 1f.
+
+17/12/2024
+- Fixing my respawn for my player. I previous had a respawn for whenever my player falls off the map, and if they pass a certain threshold, they'd respawn back at the respawn point.
