@@ -111,3 +111,10 @@ private void OnControllerColliderHit(ControllerColliderHit hit)
 
 17/12/2024
 - Fixing my respawn for my player. I previous had a respawn for whenever my player falls off the map, and if they pass a certain threshold, they'd respawn back at the respawn point.
+- I bumped into issues where whenever my player reaches 0 HP, my player doesn't respawn. I could see that my "Die" statement was functioning with Debug.Log, but my player wasn't actually respawning whenever my player dies.
+- My respawn script to when my player falls off the map was separate, so to respawn my player when he reaches 0 HP, I had to put in my respawn function in my Health script.
+- I went to my "void Die()" function in my health script, and tried to reference charactercontroller. I had it disabled when my health reaches 0, then re-enable when my player respawns after he dies and goes back to full health.
+- That went unsuccessful, but I needed confirmation if it was actually being picked up, so I added a Debug.Log and tested it. It turns out it wasn't picking it up so I had to try something different.
+- I then tried to reference the player itself, so I referenced my PlayerMovement script. I had it so that it'll find the PlayerMovement script, then once it detects it, it'll respawn my player.
+- I also had to make a public void Respawn in my PlayerMovement to help reference my health script to my PlayerMovement, and I did what I did initially, where I made it so the charactercontroller is disabled when my player dies, then my player respawns and has full HP, the charactercontroller is then re-enabled.
+- This was successful and my player respawns whenever it dies as well as when it falls off the map.
